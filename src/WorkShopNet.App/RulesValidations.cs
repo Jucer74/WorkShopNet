@@ -12,7 +12,7 @@ namespace WorkShopNet.App
 
         protected virtual bool IsNullOrEmptyIdentifier(string identifier)
         {
-            return string.IsNullOrEmpty(identifier);
+            return string.IsNullOrEmpty(identifier) || string.IsNullOrWhiteSpace(identifier);
         }
 
         protected abstract bool IsValidMaximunLength(string identifier);
