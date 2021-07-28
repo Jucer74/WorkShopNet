@@ -7,11 +7,11 @@
   <FullPath>d:\Repositories\WorkShopNet\src\WorkShopNet.App\WorkShopNet.App.csproj</FullPath>
   <IsExcluded>false</IsExcluded>
   <AnalysisResults>
-    <AnalysisResult Id="FilesToAnalyze" Location="d:\Repositories\WorkShopNet\.sonarqube\conf\2\FilesToAnalyze.txt" />
+    <AnalysisResult Id="FilesToAnalyze" Location="d:\Repositories\WorkShopNet\.sonarqube\conf\8\FilesToAnalyze.txt" />
   </AnalysisResults>
   <AnalysisSettings>
     <Property Name="sonar.cs.roslyn.reportFilePaths">d:\Repositories\WorkShopNet\src\WorkShopNet.App\bin\Debug\net5.0\WorkShopNet.App.dll.RoslynCA.json|d:\Repositories\WorkShopNet\src\WorkShopNet.App\bin\Debug\net5.0\WorkShopNet.App.dll.RoslynCA.json</Property>
-    <Property Name="sonar.cs.analyzer.projectOutPaths">d:\Repositories\WorkShopNet\.sonarqube\out\2</Property>
+    <Property Name="sonar.cs.analyzer.projectOutPaths">d:\Repositories\WorkShopNet\.sonarqube\out\8</Property>
   </AnalysisSettings>
   <Configuration>Debug</Configuration>
   <Platform>AnyCPU</Platform>
