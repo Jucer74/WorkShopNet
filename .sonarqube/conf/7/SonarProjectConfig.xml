@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<SonarProjectConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonarsource.com/msbuild/analyzer/2021/1">
-  <AnalysisConfigPath>d:\Repositories\WorkShopNet\.sonarqube\conf\SonarQubeAnalysisConfig.xml</AnalysisConfigPath>
-  <ProjectPath>d:\Repositories\WorkShopNet\tests\Unit.Tests\WorkShopNet.Unit.Tests\WorkShopNet.Unit.Tests.csproj</ProjectPath>
-  <FilesToAnalyzePath>d:\Repositories\WorkShopNet\.sonarqube\conf\7\FilesToAnalyze.txt</FilesToAnalyzePath>
-  <OutPath>d:\Repositories\WorkShopNet\.sonarqube\out\7</OutPath>
-  <ProjectType>Test</ProjectType>
-  <TargetFramework>net5.0</TargetFramework>
-</SonarProjectConfig>
