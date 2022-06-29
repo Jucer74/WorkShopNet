@@ -30,6 +30,9 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using WorkShopNet.App;
+using System.Diagnostics.CodeAnalysis;
+
+
 
 #region Test-Data
 
@@ -40,19 +43,20 @@ string badInitialCapitalLetterIdentifier = "1234567890";
 
 #endregion Test-Data
 
+
 // Entry Point
 Console.Clear();
 Console.WriteLine("WorkShop .Net");
 Console.WriteLine("-------------");
 Console.WriteLine();
 
-ExecuteValidationMethod(ValidateMethods.RegularExpressionValidate);
+//ExecuteValidationMethod(ValidateMethods.RegularExpressionValidate);
 ExecuteValidationMethod(ValidateMethods.IfStatementValidate);
-ExecuteValidationMethod(ValidateMethods.ThrowExceptionValidate);
-ExecuteValidationMethod(ValidateMethods.PcreValidate);
+//ExecuteValidationMethod(ValidateMethods.ThrowExceptionValidate);
+//ExecuteValidationMethod(ValidateMethods.PcreValidate);
 
 #region Methods
-
+[ExcludeFromCodeCoverage]
 void ExecuteValidationMethod(Func<string, List<string>> validMethod)
 {
     Process currentProcess = Process.GetCurrentProcess();

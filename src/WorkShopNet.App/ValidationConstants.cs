@@ -4,7 +4,7 @@
     {
         #region Boundaries
 
-        public const int Iterationlimit = 1_000_000;
+        public const int Iterationlimit = 10;
         public const int MaxLength = 32;
         public const int MinLength = 5;
 

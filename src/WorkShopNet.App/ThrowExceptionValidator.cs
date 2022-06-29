@@ -12,8 +12,32 @@ namespace WorkShopNet.App
             try
             {
                 ValidNullOrEmptyIdentifier(identifier);
+            }
+            catch (Exception ex)
+            {
+                errorList.Add(ex.Message);
+            }
+
+            try
+            {
                 ValidMinimunLength(identifier);
+            }
+            catch (Exception ex)
+            {
+                errorList.Add(ex.Message);
+            }
+
+            try
+            {
                 ValidMaximunLength(identifier);
+            }
+            catch (Exception ex)
+            {
+                errorList.Add(ex.Message);
+            }
+
+            try
+            {
                 ValidInitialCapitalLetter(identifier);
             }
             catch (Exception ex)
