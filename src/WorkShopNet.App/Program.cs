@@ -48,7 +48,7 @@ Console.WriteLine();
 
 ExecuteValidationMethod(ValidateMethods.RegularExpressionValidate);
 ExecuteValidationMethod(ValidateMethods.IfStatementValidate);
-//ExecuteValidationMethod(ValidateMethods.ThrowExceptionValidate);
+ExecuteValidationMethod(ValidateMethods.ThrowExceptionValidate);
 ExecuteValidationMethod(ValidateMethods.PcreValidate);
 
 #region Methods
@@ -66,7 +66,7 @@ void ExecuteValidationMethod(Func<string, List<string>> validMethod)
 
     for (int i = 0; i < ValidationConstants.Iterationlimit; i++)
     {
-        //Console.Write(".");
+        Console.Write(".");
         errorList = validMethod(rightIdentifier);
         errorList = validMethod(badMinimumLengthIdentifier);
         errorList = validMethod(badMaximumLengthIdentifier);
