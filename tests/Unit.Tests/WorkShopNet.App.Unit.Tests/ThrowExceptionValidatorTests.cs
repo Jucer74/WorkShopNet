@@ -93,5 +93,21 @@ namespace WorkShopNet.App.Unit.Tests
             Assert.That(result[0], Is.EqualTo(ValidationMessages.MinimumLengthError));
             Assert.That(result[1], Is.EqualTo(ValidationMessages.InitialCapitalLetterError));
         }
+
+        [Test]
+        public void Validate_Good_Identifier_Success()
+        {
+            // Arrage
+            string identifier = "A123456";
+
+            // Act
+            List<string> result = testThrowExceptionValidator.Validate(identifier);
+
+            // Asserts
+            Assert.IsNotNull(result);
+            Assert.IsEmpty(result);
+            Assert.That(result.Count, Is.EqualTo(0));
+        }
+
     }
 }

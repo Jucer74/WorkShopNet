@@ -8,7 +8,7 @@ namespace WorkShopNet.App
         public List<string> Validate(string identifier)
         {
             List<string> errorList = new();
-
+            bool catchError = false;
             try
             {
                 ValidNullOrEmptyIdentifier(identifier);
@@ -16,7 +16,10 @@ namespace WorkShopNet.App
             catch (Exception ex)
             {
                 errorList.Add(ex.Message);
+                catchError = true;  
             }
+
+            if (catchError) return errorList;
 
             try
             {
@@ -25,7 +28,10 @@ namespace WorkShopNet.App
             catch (Exception ex)
             {
                 errorList.Add(ex.Message);
+                catchError = true;
             }
+
+            if (catchError) return errorList;
 
             try
             {
@@ -34,7 +40,9 @@ namespace WorkShopNet.App
             catch (Exception ex)
             {
                 errorList.Add(ex.Message);
+                catchError = true;
             }
+            if (catchError) return errorList;
 
             try
             {
@@ -43,6 +51,7 @@ namespace WorkShopNet.App
             catch (Exception ex)
             {
                 errorList.Add(ex.Message);
+                catchError = true;
             }
 
             return errorList;

@@ -95,6 +95,19 @@ namespace WorkShopNet.App.Unit.Tests
             Assert.That(result[1], Is.EqualTo(ValidationMessages.InitialCapitalLetterError));
         }
 
+        [Test]
+        public void Validate_Good_Identifier_Success()
+        {
+            // Arrage
+            string identifier = "A123456";
 
+            // Act
+            List<string> result = testPcreValidator.Validate(identifier);
+
+            // Asserts
+            Assert.IsNotNull(result);
+            Assert.IsEmpty(result);
+            Assert.That(result.Count, Is.EqualTo(0));
+        }
     }
 }
